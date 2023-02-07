@@ -1,7 +1,8 @@
 <template>
   <v-app>
     <main>
-      <div class="text-center"><h1>สภาพอากาศ</h1></div><br/>
+      <div class="text-center"><h1>สภาพอากาศ</h1></div>
+      <br />
       <div class="search-box">
         <input
           type="text"
@@ -11,7 +12,7 @@
           @keypress="fetchWeather"
         />
       </div>
-      
+
       <div class="weather-wrap" v-if="typeof weather.main != 'undefined'">
         <div class="location-box">
           <div class="location">
